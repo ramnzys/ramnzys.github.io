@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      #loading {
+        background: url("data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN0eWxlPi5zcGlubmVyX3pXVm17YW5pbWF0aW9uOnNwaW5uZXJfNVFpVyAxLjJzIGxpbmVhciBpbmZpbml0ZSxzcGlubmVyX1BuWm8gMS4ycyBsaW5lYXIgaW5maW5pdGV9LnNwaW5uZXJfZ2Z5RHthbmltYXRpb246c3Bpbm5lcl81UWlXIDEuMnMgbGluZWFyIGluZmluaXRlLHNwaW5uZXJfNGo3byAxLjJzIGxpbmVhciBpbmZpbml0ZTthbmltYXRpb24tZGVsYXk6LjFzfS5zcGlubmVyX1Q1Skp7YW5pbWF0aW9uOnNwaW5uZXJfNVFpVyAxLjJzIGxpbmVhciBpbmZpbml0ZSxzcGlubmVyX2ZMSzQgMS4ycyBsaW5lYXIgaW5maW5pdGU7YW5pbWF0aW9uLWRlbGF5Oi4xc30uc3Bpbm5lcl9FM1d6e2FuaW1hdGlvbjpzcGlubmVyXzVRaVcgMS4ycyBsaW5lYXIgaW5maW5pdGUsc3Bpbm5lcl90RGppIDEuMnMgbGluZWFyIGluZmluaXRlO2FuaW1hdGlvbi1kZWxheTouMnN9LnNwaW5uZXJfZzJ2c3thbmltYXRpb246c3Bpbm5lcl81UWlXIDEuMnMgbGluZWFyIGluZmluaXRlLHNwaW5uZXJfQ01pVCAxLjJzIGxpbmVhciBpbmZpbml0ZTthbmltYXRpb24tZGVsYXk6LjJzfS5zcGlubmVyX2N0WUJ7YW5pbWF0aW9uOnNwaW5uZXJfNVFpVyAxLjJzIGxpbmVhciBpbmZpbml0ZSxzcGlubmVyX2NIS1IgMS4ycyBsaW5lYXIgaW5maW5pdGU7YW5pbWF0aW9uLWRlbGF5Oi4yc30uc3Bpbm5lcl9CRE5qe2FuaW1hdGlvbjpzcGlubmVyXzVRaVcgMS4ycyBsaW5lYXIgaW5maW5pdGUsc3Bpbm5lcl9SZTZlIDEuMnMgbGluZWFyIGluZmluaXRlO2FuaW1hdGlvbi1kZWxheTouM3N9LnNwaW5uZXJfckN3M3thbmltYXRpb246c3Bpbm5lcl81UWlXIDEuMnMgbGluZWFyIGluZmluaXRlLHNwaW5uZXJfRUptSiAxLjJzIGxpbmVhciBpbmZpbml0ZTthbmltYXRpb24tZGVsYXk6LjNzfS5zcGlubmVyX1Jzem17YW5pbWF0aW9uOnNwaW5uZXJfNVFpVyAxLjJzIGxpbmVhciBpbmZpbml0ZSxzcGlubmVyX1lKT1AgMS4ycyBsaW5lYXIgaW5maW5pdGU7YW5pbWF0aW9uLWRlbGF5Oi40c31Aa2V5ZnJhbWVzIHNwaW5uZXJfNVFpV3swJSw1MCV7d2lkdGg6Ny4zM3B4O2hlaWdodDo3LjMzcHh9MjUle3dpZHRoOjEuMzNweDtoZWlnaHQ6MS4zM3B4fX1Aa2V5ZnJhbWVzIHNwaW5uZXJfUG5ab3swJSw1MCV7eDoxcHg7eToxcHh9MjUle3g6NHB4O3k6NHB4fX1Aa2V5ZnJhbWVzIHNwaW5uZXJfNGo3b3swJSw1MCV7eDo4LjMzcHg7eToxcHh9MjUle3g6MTEuMzNweDt5OjRweH19QGtleWZyYW1lcyBzcGlubmVyX2ZMSzR7MCUsNTAle3g6MXB4O3k6OC4zM3B4fTI1JXt4OjRweDt5OjExLjMzcHh9fUBrZXlmcmFtZXMgc3Bpbm5lcl90RGppezAlLDUwJXt4OjE1LjY2cHg7eToxcHh9MjUle3g6MTguNjZweDt5OjRweH19QGtleWZyYW1lcyBzcGlubmVyX0NNaVR7MCUsNTAle3g6OC4zM3B4O3k6OC4zM3B4fTI1JXt4OjExLjMzcHg7eToxMS4zM3B4fX1Aa2V5ZnJhbWVzIHNwaW5uZXJfY0hLUnswJSw1MCV7eDoxcHg7eToxNS42NnB4fTI1JXt4OjRweDt5OjE4LjY2cHh9fUBrZXlmcmFtZXMgc3Bpbm5lcl9SZTZlezAlLDUwJXt4OjE1LjY2cHg7eTo4LjMzcHh9MjUle3g6MTguNjZweDt5OjExLjMzcHh9fUBrZXlmcmFtZXMgc3Bpbm5lcl9FSm1KezAlLDUwJXt4OjguMzNweDt5OjE1LjY2cHh9MjUle3g6MTEuMzNweDt5OjE4LjY2cHh9fUBrZXlmcmFtZXMgc3Bpbm5lcl9ZSk9QezAlLDUwJXt4OjE1LjY2cHg7eToxNS42NnB4fTI1JXt4OjE4LjY2cHg7eToxOC42NnB4fX08L3N0eWxlPjxyZWN0IGNsYXNzPSJzcGlubmVyX3pXVm0iIHg9IjEiIHk9IjEiIHdpZHRoPSI3LjMzIiBoZWlnaHQ9IjcuMzMiLz48cmVjdCBjbGFzcz0ic3Bpbm5lcl9nZnlEIiB4PSI4LjMzIiB5PSIxIiB3aWR0aD0iNy4zMyIgaGVpZ2h0PSI3LjMzIi8+PHJlY3QgY2xhc3M9InNwaW5uZXJfVDVKSiIgeD0iMSIgeT0iOC4zMyIgd2lkdGg9IjcuMzMiIGhlaWdodD0iNy4zMyIvPjxyZWN0IGNsYXNzPSJzcGlubmVyX0UzV3oiIHg9IjE1LjY2IiB5PSIxIiB3aWR0aD0iNy4zMyIgaGVpZ2h0PSI3LjMzIi8+PHJlY3QgY2xhc3M9InNwaW5uZXJfZzJ2cyIgeD0iOC4zMyIgeT0iOC4zMyIgd2lkdGg9IjcuMzMiIGhlaWdodD0iNy4zMyIvPjxyZWN0IGNsYXNzPSJzcGlubmVyX2N0WUIiIHg9IjEiIHk9IjE1LjY2IiB3aWR0aD0iNy4zMyIgaGVpZ2h0PSI3LjMzIi8+PHJlY3QgY2xhc3M9InNwaW5uZXJfQkROaiIgeD0iMTUuNjYiIHk9IjguMzMiIHdpZHRoPSI3LjMzIiBoZWlnaHQ9IjcuMzMiLz48cmVjdCBjbGFzcz0ic3Bpbm5lcl9yQ3czIiB4PSI4LjMzIiB5PSIxNS42NiIgd2lkdGg9IjcuMzMiIGhlaWdodD0iNy4zMyIvPjxyZWN0IGNsYXNzPSJzcGlubmVyX1Jzem0iIHg9IjE1LjY2IiB5PSIxNS42NiIgd2lkdGg9IjcuMzMiIGhlaWdodD0iNy4zMyIvPjwvc3ZnPg==")
+          no-repeat center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9999999;
+        background-size: contain;
+      }
+
+      .bg {
+        background-image: url("https://picsum.photos/2048");
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body id="loading">
+    <div class="bg"></div>
+  </body>
+</html>
